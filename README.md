@@ -29,7 +29,7 @@ All x-rays were initially screened for quality control and graded by three exper
 
 # Final Evaluation
 Final model evaluation resulted in 95% accuracy and a loss score of 0.1
-<img src="images/augment_plot.png" />
+<img src="images/acc_loss_graphs.png" />
 <img src="images/confusion_matrix.png" />
 
 
