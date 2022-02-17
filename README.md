@@ -5,17 +5,17 @@
 <img src='images/lung.png' width=300 align='right'/>
 <br>
 Pneumonia is an infection that inflames the air sacs in our lungs. Many germs can cause pneumonia -- the most common are bacteria and viruses in the air we breathe. Your body usually prevents these germs from infecting your lungs, but sometimes these germs can overpower your immune system, even if your health is generally good. Pneumonia is the world’s leading cause of death among children under 5 years of age.
-An x-ray exam will allow your doctor to see your lungs, heart and blood vessels to help determine if you have pneumonia. When interpreting the x-ray, the radiologist will look for white spots in the lungs (called infiltrates) that identify an infection.
+An x-ray exam will allow a medical professional to see your lungs, heart and blood vessels to help determine if you have pneumonia. When interpreting the x-ray, the radiologist will look for white spots in the lungs (called infiltrates) that identify an infection.
 
 Using Convolutional Neural Networks we can train a model that identifies whether a patient has pneumonia given a chest x-ray. Our final model has a 95% accuracy on our testing images.
 
 # Business Understanding 
 Machine Learning has shown impressive accuracy in medical imaging. Creating a predictive model for identifying pneumonia from x-ray images provides medical professionals with a system that can automate the process for accurate identification of pneumonia, saving time and resources.
 
-As with many predictive models used in medicine, we would rather minimize false negatives (patient has pnumonia but the model classifies their x-ray as normal) than false positives (patient doesn't have pnumonia but the model classifies x-ray as pnumonia). This is because we are dealing with the lives and health of humans. Therefore we want to create a model that minimizes false negatives.
+As with many predictive models used in medicine, we want to prioritize minimizing false negatives (patient has pnumonia but the model classifies their x-ray as normal) over false positives (patient doesn't have pnumonia but the model classifies x-ray as pnumonia). This is because we are dealing with the lives and health of humans. Therefore we want to create a model that minimizes false negatives.
 
 # Data Understanding
-This dataset contains 5,856 validated Chest X-Ray images. The images categorized into two subsets -- Pneumonia and Normal. The images are split into training, validation, and testing sets.
+This dataset contains 5,856 validated Chest X-Ray images. The images categorized into two subsets -- Pneumonia and Normal. The images are split into training, validation, and testing sets. Our data contains 3,692 images of chest x-rays with pneumonia and 1,382 images of chest x-rays without pneumonia
 
 This dataset comes from Kermany et al and can be found at https://data.mendeley.com/datasets/rscbjbr9sj/3
 
@@ -28,7 +28,7 @@ All x-rays were initially screened for quality control and graded by three exper
 4. Finally we used augmentation, using ImageDataGenerator and tweaking shear_range, zoom_range, and horizontal_flip. This model resulted in the hgihest accuracy, lowest loss, and no overfitting. 
 
 # Final Evaluation
-Final model evaluation resulted in 95% accuracy and a loss score of 0.1
+Final model evaluation resulted in 95% accuracy and a loss score of 0.1 <br>
 <img src="images/acc_loss_graphs.png" />
 <img src="images/confusion_matrix.png" />
 
