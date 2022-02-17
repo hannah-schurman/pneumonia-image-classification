@@ -25,7 +25,7 @@ All x-rays were initially screened for quality control and graded by three exper
 1. The modeling began with a baseline Neural Network model which gave us an average of 82% accuracy. 
 2. In attemps to increase our accuracy score, we used an untuned Convolutional Neural Network model, which resulted in strong overfitting
 3. Using various dropout and regression techniques we increased our model accuracy and decreased loss, but were still running into overfitting issues
-4. Finally we used augmentation, using ImageDataGenerator and tweaking shear_range, zoom_range, and horizontal_flip. This model resulted in the hgihest accuracy, lowest loss, and no overfitting. 
+4. Finally we used augmentation, using ImageDataGenerator and tuning shear_range, zoom_range, and horizontal_flip. This model resulted in the hgihest accuracy, lowest loss, and no overfitting. 
 
 # Final Evaluation
 Final model evaluation resulted in 95% accuracy and a loss score of 0.1 <br>
