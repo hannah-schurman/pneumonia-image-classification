@@ -10,7 +10,7 @@ An x-ray exam will allow a medical professional to see your lungs, heart and blo
 Using Convolutional Neural Networks we can train a model that identifies whether a patient has pneumonia given a chest x-ray. Our final model has a 95% accuracy on our testing images.
 
 # Business Understanding 
-Machine Learning has shown impressive accuracy in medical imaging. Creating a predictive model for identifying pneumonia from x-ray images provides medical professionals with a system that can automate the process for accurate identification of pneumonia, saving time and resources.
+Machine Learning has shown impressive accuracy in medical imaging. My team was hired by a leading hospital in Seattle to create a predictive model for identifying pneumonia from x-ray images. This technology provides medical professionals with a system that can automate the process for accurate identification of pneumonia, saving time and resources. 
 
 As with many predictive models used in medicine, we want to prioritize minimizing false negatives (patient has pnumonia but the model classifies their x-ray as normal) over false positives (patient doesn't have pnumonia but the model classifies x-ray as pnumonia). This is because we are dealing with the lives and health of humans. Therefore we want to create a model that minimizes false negatives.
 
@@ -33,7 +33,7 @@ Final model evaluation resulted in 95% accuracy and a loss score of 0.1 <br>
 <img src="images/confusion_matrix.png" />
 
 
-(I was unable to find an option for setting a seed to keep modeling consistent when the notebook was restarted so I saved one of the final model using tensorflow's save and load_model functions. The accuracy rates for our final model architecture ranged from 93% to 96% accuracy, usually remaining at 0.1 for loss score.)
+(I was unable to set a random seed to keep modeling consistent when the notebook was restarted so I saved one of the final models using tensorflow's save and load_model functions. The accuracy rates for our final model ranged from 93% to 96% accuracy and usually remaining at 0.1 for loss score.)
 
 # Conlusion
 Our final model has an accuracy of 95% on predicting whether an x-ray image contains evidence of Pneumonia (viral or bacterial). As we can see from our confusion matrix, our model shows to classify more false positives ('classifies as pnumonia, but not') than false negatives ('classifies as normal, but actually pneumonia'). This alligns strongly with our business problem so we will consider this model to be very efficient in classifying pneumonia from chest x-rays.
