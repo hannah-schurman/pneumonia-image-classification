@@ -42,7 +42,7 @@ Our final model has an accuracy of 95% on predicting whether an x-ray image cont
 This type of methodology can be extremely useful in the identification of infections and adnormalities in medical imaging (not just x-ray but MRI, CT's, etc..). The use of maching learning techniques has the potential to be extremely useful in the medical field, but it also has the potential to be harmful. We have to be mindful with the types of scenarios we are using maching learning and AI for and be socially responsible when diploying models. 
 
 # Further Questions
-See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/pneumonia-image-classification/blob/main/pneumonia-image-classification.ipynb) or review [this presentation]()
+See the full analysis in the [Jupyter Notebook](https://github.com/hannah-schurman/pneumonia-image-classification/blob/main/pneumonia-image-classification.ipynb) or review [this presentation](https://github.com/hannah-schurman/pneumonia-image-classification/blob/main/pneumonia_image_classification.pdf)
 
 For any additional questions, please contact Hannah Schurman at [hannah.schurman1@gmail.com](hannah.schurman1@gmail.com)
 
